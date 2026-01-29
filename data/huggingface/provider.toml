@@ -8,7 +8,7 @@ terms_of_service = "https://huggingface.co/terms-of-service"
 time_created = "2025-09-08T00:00:00Z"
 
 [services_populator]
-command = ['scripts/update_services.py']
+command = 'scripts/update_services.py'
 requirements = ['any-llm-sdk[huggingface]', 'requests', 'unitysvc-services']
 
 [services_populator.envs]
