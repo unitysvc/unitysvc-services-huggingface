@@ -1,19 +1,19 @@
 {
   "currency": "USD",
-  "description": "Zai Org/Glm Image language model",
+  "description": "Fal/Flux 2 Klein 4B Outpaint Lora language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Zai Org/Glm Image",
-  "name": "zai-org/GLM-Image",
+  "display_name": "Fal/Flux 2 Klein 4B Outpaint Lora",
+  "name": "fal/flux-2-klein-4B-outpaint-lora",
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "ready",
   "tags": [
     "byop"
   ],
-  "time_created": "2026-01-26T02:53:59.736Z",
+  "time_created": "2026-01-31T17:45:20.663676Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
