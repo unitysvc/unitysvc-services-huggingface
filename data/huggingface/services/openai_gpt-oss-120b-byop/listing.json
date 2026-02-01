@@ -79,11 +79,11 @@
   },
   "user_parameters_ui_schema": {
     "api_key": {
-      "ui:description": "Managed via secrets",
-      "ui:disabled": true,
+      "ui:description": "Your API key will be securely stored as secret 'HF_TOKEN'",
       "ui:options": {
         "secret": "HF_TOKEN"
-      }
+      },
+      "ui:placeholder": "Enter your API key"
     }
   }
 }
