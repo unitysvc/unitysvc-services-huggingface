@@ -1,7 +1,7 @@
 import os
 import requests
 
-API_KEY = os.getenv("API_KEY")
+UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
 
 functions = [
     {
@@ -19,7 +19,7 @@ functions = [
 
 response = requests.post(
     "https://router.huggingface.co/v1/chat/completions",
-    headers={"Authorization": f"Bearer {API_KEY}"},
+    headers={"Authorization": f"Bearer {UNITYSVC_API_KEY}"},
     json={
         "model": "{{offering.name}}",
         "messages": [

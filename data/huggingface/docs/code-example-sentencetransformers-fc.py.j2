@@ -2,7 +2,7 @@ import os
 import time
 import requests
 
-API_KEY = os.getenv("API_KEY")
+UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
 
 def sentence_similarity(
     model_id: str,
@@ -13,7 +13,7 @@ def sentence_similarity(
     url = f"https://router.huggingface.co/models/{{offering.name}}"
 
     headers = {
-        "Authorization": f"Bearer {API_KEY}",
+        "Authorization": f"Bearer {UNITYSVC_API_KEY}",
         "Content-Type": "application/json"
     }
 

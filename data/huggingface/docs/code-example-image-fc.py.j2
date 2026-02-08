@@ -4,7 +4,7 @@ from huggingface_hub import InferenceClient
 def generate_image(prompt: str, model: str):
     client = InferenceClient(
         provider="auto",
-        api_key=os.getenv("API_KEY"),
+        api_key=os.getenv("UNITYSVC_API_KEY"),
     )
 
     image = client.text_to_image(prompt=prompt, model=model)

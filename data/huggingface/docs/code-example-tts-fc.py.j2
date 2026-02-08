@@ -2,7 +2,7 @@ import os
 import requests
 from pathlib import Path
 
-API_KEY = os.getenv("API_KEY")
+UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
 
 def text_to_speech(
     model_id: str,
@@ -12,7 +12,7 @@ def text_to_speech(
     url = f"https://router.huggingface.co/models/{{offering.name}}"
 
     headers = {
-        "Authorization": f"Bearer {API_KEY}"
+        "Authorization": f"Bearer {UNITYSVC_API_KEY}"
     }
 
     payload = {

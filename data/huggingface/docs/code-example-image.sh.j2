@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
-# Assumes API_KEY is already exported in the environment
-# export API_KEY="hf_..."
+# Assumes UNITYSVC_API_KEY is already exported in the environment
+# export UNITYSVC_API_KEY="hf_..."
 
 python << 'PY'
 import os
@@ -9,7 +9,7 @@ from huggingface_hub import InferenceClient
 
 client = InferenceClient(
     provider="auto",
-    api_key=os.getenv("API_KEY"),
+    api_key=os.getenv("UNITYSVC_API_KEY"),
 )
 
 image = client.text_to_image(

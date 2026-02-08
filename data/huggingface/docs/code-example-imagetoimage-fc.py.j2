@@ -3,7 +3,7 @@ import time
 import requests
 from pathlib import Path
 
-API_KEY = os.getenv("API_KEY")
+UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
 
 def image_to_image(
     model_id: str,
@@ -16,7 +16,7 @@ def image_to_image(
     url = f"https://router.huggingface.co/models/{{offering.name}}"
 
     headers = {
-        "Authorization": f"Bearer {API_KEY}"
+        "Authorization": f"Bearer {UNITYSVC_API_KEY}"
     }
 
     for _ in range(retries):
