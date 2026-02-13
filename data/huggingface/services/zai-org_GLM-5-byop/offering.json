@@ -1,19 +1,19 @@
 {
   "currency": "USD",
-  "description": "Qwen/Qwen3 Vl 8B Instruct language model",
+  "description": "Zai Org/Glm 5 language model",
   "details": {
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Qwen/Qwen3 Vl 8B Instruct",
-  "name": "Qwen/Qwen3-VL-8B-Instruct",
+  "display_name": "Zai Org/Glm 5",
+  "name": "zai-org/GLM-5",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "deprecated",
+  "status": "ready",
   "tags": [
     "byop"
   ],
-  "time_created": "2026-02-10T04:37:33.287370Z",
+  "time_created": "2026-02-13T03:11:22.707761Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
