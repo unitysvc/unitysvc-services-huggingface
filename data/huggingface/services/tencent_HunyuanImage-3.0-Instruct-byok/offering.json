@@ -9,7 +9,7 @@
   "name": "tencent/HunyuanImage-3.0-Instruct",
   "schema": "offering_v1",
   "service_type": "llm",
-  "status": "ready",
+  "status": "deprecated",
   "tags": [
     "byop"
   ],
