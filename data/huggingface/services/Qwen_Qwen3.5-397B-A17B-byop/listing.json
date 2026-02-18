@@ -56,13 +56,13 @@
     }
   },
   "status": "ready",
-  "time_created": "2026-01-26T02:53:59.747Z",
+  "time_created": "2026-02-18T03:09:49.661359Z",
   "user_access_interfaces": {
     "Provider API": {
       "access_method": "http",
       "base_url": "${GATEWAY_BASE_URL}/p/huggingface",
       "routing_key": {
-        "model": "hexgrad/Kokoro-82M"
+        "model": "Qwen/Qwen3.5-397B-A17B"
       }
     }
   },
