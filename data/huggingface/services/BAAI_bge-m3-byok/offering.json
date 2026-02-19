@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "description": "Baai/Bge M3 language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Baai/Bge M3",
+  "name": "BAAI/bge-m3",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-02-19T03:08:39.768973Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://api-inference.huggingface.co/models/",
+      "rate_limits": []
+    }
+  }
+}

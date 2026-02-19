@@ -1,0 +1,26 @@
+{
+  "currency": "USD",
+  "description": "Nanbeige/Nanbeige4.1 3B language model",
+  "details": {
+    "object": "model",
+    "owned_by": "huggingface"
+  },
+  "display_name": "Nanbeige/Nanbeige4.1 3B",
+  "name": "Nanbeige/Nanbeige4.1-3B",
+  "schema": "offering_v1",
+  "service_type": "llm",
+  "status": "ready",
+  "tags": [
+    "ai",
+    "gateway",
+    "byok"
+  ],
+  "time_created": "2026-02-19T03:08:39.755989Z",
+  "upstream_access_interfaces": {
+    "Hugging Face API": {
+      "access_method": "http",
+      "base_url": "https://api-inference.huggingface.co/models/",
+      "rate_limits": []
+    }
+  }
+}
