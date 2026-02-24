@@ -1,12 +1,14 @@
 {
   "currency": "USD",
-  "description": "Black Forest Labs/Flux.1 Dev language model",
+  "description": "Black Forest Labs/Flux.1 Schnell language model",
   "details": {
+    "litellm_provider": "nscale",
+    "mode": "image_generation",
     "object": "model",
     "owned_by": "huggingface"
   },
-  "display_name": "Black Forest Labs/Flux.1 Dev",
-  "name": "black-forest-labs/FLUX.1-dev",
+  "display_name": "Black Forest Labs/Flux.1 Schnell",
+  "name": "black-forest-labs/FLUX.1-schnell",
   "schema": "offering_v1",
   "service_type": "llm",
   "status": "ready",
@@ -15,7 +17,7 @@
     "gateway",
     "byok"
   ],
-  "time_created": "2026-01-26T02:53:59.745Z",
+  "time_created": "2026-02-24T03:08:11.848551Z",
   "upstream_access_interfaces": {
     "Hugging Face API": {
       "access_method": "http",
