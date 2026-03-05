@@ -4,6 +4,7 @@ import requests
 from pathlib import Path
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
+SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
 
 def image_to_image(
     model_id: str,
@@ -13,7 +14,7 @@ def image_to_image(
     strength: float = 0.6,
     retries: int = 5
 ):
-    url = f"https://router.huggingface.co/models/{{offering.name}}"
+    url = f"{SERVICE_BASE_URL}/models/{{offering.name}}"
 
     headers = {
         "Authorization": f"Bearer {UNITYSVC_API_KEY}"

@@ -3,13 +3,14 @@ import requests
 from pathlib import Path
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
+SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
 
 def text_to_speech(
     model_id: str,
     text: str,
     output_path: str = "output.wav"
 ):
-    url = f"https://router.huggingface.co/models/{{offering.name}}"
+    url = f"{SERVICE_BASE_URL}/models/{{offering.name}}"
 
     headers = {
         "Authorization": f"Bearer {UNITYSVC_API_KEY}"

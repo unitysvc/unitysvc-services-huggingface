@@ -3,5 +3,5 @@ curl -X POST \
   -F "image=@input.png" \
   -F 'prompt=Turn this into a cinematic cyberpunk scene' \
   -F 'strength=0.6' \
-  https://router.huggingface.co/models/{{offering.name}} \
+  ${SERVICE_BASE_URL}/models/{{offering.name}} \
   --output output.png

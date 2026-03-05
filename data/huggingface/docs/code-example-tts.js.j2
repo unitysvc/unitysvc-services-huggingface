@@ -1,7 +1,8 @@
 const UNITYSVC_API_KEY = process.env.UNITYSVC_API_KEY;
+const SERVICE_BASE_URL = process.env.SERVICE_BASE_URL;
 
 const response = await fetch(
-  `https://router.huggingface.co/models/{{offering.name}}`,
+  `${SERVICE_BASE_URL}/models/{{offering.name}}`,
   {
     method: "POST",
     headers: {

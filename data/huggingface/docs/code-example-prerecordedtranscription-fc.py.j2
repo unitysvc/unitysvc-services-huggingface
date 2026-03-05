@@ -3,6 +3,7 @@ import time
 import requests
 
 UNITYSVC_API_KEY = os.getenv("UNITYSVC_API_KEY")
+SERVICE_BASE_URL = os.environ.get("SERVICE_BASE_URL")
 
 def transcribe_audio(
     model_id: str,
