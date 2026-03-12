@@ -39,7 +39,7 @@ def text_to_video(
 # ===== Example usage =====
 if __name__ == "__main__":
     path = text_to_video(
-        model_id="{{offering.name}}",
+        model_id=os.environ.get("MODEL", "{{offering.name}}"),
         prompt="A cinematic shot of a futuristic city at sunset, flying drones"
     )
     print(f"Video saved to {path}")

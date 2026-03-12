@@ -41,7 +41,7 @@ def sentence_similarity(
 # ===== Example usage =====
 if __name__ == "__main__":
     scores = sentence_similarity(
-        model_id="{{offering.name}}",
+        model_id=os.environ.get("MODEL", "{{offering.name}}"),
         source_sentence="I love machine learning",
         sentences=[
             "I enjoy studying AI",
