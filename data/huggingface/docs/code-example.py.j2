@@ -7,7 +7,7 @@ response = requests.post(
     f"{os.getenv('SERVICE_BASE_URL')}/chat/completions",
     headers={"Authorization": f"Bearer {UNITYSVC_API_KEY}"},
     json={
-        "model": "{{offering.name}}",
+        "model": os.environ.get("MODEL", "{{offering.name}}"),
         "messages": [
             {"role": "user", "content": "How many G's are in huggingface?"}
         ]

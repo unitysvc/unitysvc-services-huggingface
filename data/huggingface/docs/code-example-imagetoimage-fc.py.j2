@@ -46,7 +46,7 @@ def image_to_image(
 # ===== Example usage =====
 if __name__ == "__main__":
     path = image_to_image(
-        model_id="{{offering.name}}",
+        model_id=os.environ.get("MODEL", "{{offering.name}}"),
         image_path="input.png",
         prompt="Turn this into a cinematic cyberpunk scene"
     )
